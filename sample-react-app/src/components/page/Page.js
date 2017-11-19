@@ -6,6 +6,7 @@ export default class Page extends React.Component {
   render() {
     return (
       <div className="Page_Main">
+
         <ItemList/>
       </div>
     )

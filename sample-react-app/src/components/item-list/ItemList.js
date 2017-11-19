@@ -1,33 +1,36 @@
 import React from 'react'
 import Item from '../item/Item'
 import './ItemList.css'
+import './card-item.css'
 import {Card, Button, CardImg, CardTitle, CardText, CardGroup, CardSubtitle, CardBody} from 'reactstrap'
+import StaticData from '../../data/static/static-scraps'
 
 export default class ItemList extends React.Component {
   constructor() {
     super();
-    this.state = {items:["Hello","World","Item","Another One"]};
+    this.state = StaticData
   }
 
   render() {
     return (
       <div className="itemList">
-        <div>
-          <CardGroup>
+        <div >
+
           {this.state.items.map(function(itemElement){
+            console.log(itemElement);
             return (
-            <Card>
-              <CardImg top width="100%" src="https://placeholdit.imgix.net/~text?txtsize=33&txt=256%C3%97180&w=256&h=180" alt="Card image cap" />
+            <Card className="wrapper">
+              <CardImg top  src={"./static/images/"+itemElement.ImageID+".jpg"} alt="Card image cap" />
               <CardBody>
-                <CardTitle>{itemElement}</CardTitle>
-                <CardSubtitle>Card subtitle</CardSubtitle>
-                <CardText>This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</CardText>
-                <Button>Button</Button>
+                <CardTitle>{itemElement.User}</CardTitle>
+                <CardSubtitle>{itemElement.Title}</CardSubtitle>
+                <CardText>{itemElement.Body}</CardText>
+                <Button>View On Map</Button>
               </CardBody>
             </Card>
-          )
+            )
             })}
-          </CardGroup>
+
         </div>
 
       </div>
