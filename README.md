@@ -1,10 +1,10 @@
 # react-repo
 
-##Intro
+## Intro
 
 This is a test ground for creating a base site using reactjs
 
-##Instructions
+## Instructions
 
 To Run
 
