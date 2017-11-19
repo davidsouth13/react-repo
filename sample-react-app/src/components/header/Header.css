@@ -1,0 +1,28 @@
+.App-header {
+  background-color: #945D60;
+  height: 150px;
+  padding: 20px;
+  color: #3C3C3C;
+}
+
+/*
+Earthy and Fresh
+(Reddish-Grey) Terracotta #945D60
+(Green) Herb #626E60
+(Retro Red) Chilli #AF473C
+(Black) Charcoal #3C3C3C
+
+*/
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
